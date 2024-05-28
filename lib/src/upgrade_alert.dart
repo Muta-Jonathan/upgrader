@@ -297,12 +297,12 @@ class UpgradeAlertState extends State<UpgradeAlert> {
                 : CrossAxisAlignment.start,
             children: <Widget>[
               Text(messages.message(UpgraderMessage.releaseNotes) ?? '',
-                  style: const TextStyle(fontWeight: FontWeight.bold,color: Theme.of(context).colorScheme.onPrimary,)),
+                  style: TextStyle(fontWeight: FontWeight.bold,color: Theme.of(context).colorScheme.onPrimary,)),
               Text(releaseNotes, style: TextStyle(color: Theme.of(context).colorScheme.onPrimary,),),
             ],
           ));
     }
-    final textTitle = Text(title, key: const Key('upgrader.dialog.title'),style: TextStyle(color: Theme.of(context).colorScheme.onPrimary,),);
+    final textTitle = Text(title, key: Key('upgrader.dialog.title'),style: TextStyle(color: Theme.of(context).colorScheme.onPrimary,),);
     final content = Container(
         constraints: const BoxConstraints(maxHeight: 400),
         child: SingleChildScrollView(
