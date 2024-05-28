@@ -343,6 +343,6 @@ class UpgradeAlertState extends State<UpgradeAlert> {
             textStyle: widget.cupertinoButtonTextStyle,
             onPressed: onPressed,
             child: Text(text ?? ''))
-        : TextButton(onPressed: onPressed, child: Text(text ?? ''),style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.orange)),);
+        : TextButton(onPressed: onPressed, child: Text(text ?? '',style: TextStyle(color: Theme.of(context).colorScheme.onSecondaryContainer,),));
   }
 }
