@@ -298,7 +298,7 @@ class UpgradeAlertState extends State<UpgradeAlert> {
             children: <Widget>[
               Text(messages.message(UpgraderMessage.releaseNotes) ?? '',
                   style: TextStyle(fontWeight: FontWeight.bold,color: Theme.of(context).colorScheme.onPrimary,)),
-              Text(releaseNotes, style: TextStyle(color: Theme.of(context).colorScheme.onPrimary,),),
+              Text(releaseNotes, style: TextStyle(color: Theme.of(context).colorScheme.onSecondary,),),
             ],
           ));
     }
