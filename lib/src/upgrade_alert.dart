@@ -26,7 +26,7 @@ class UpgradeAlert extends StatefulWidget {
     this.onLater,
     this.onUpdate,
     this.shouldPopScope,
-    this.showIgnore = true,
+    this.showIgnore = false,
     this.showLater = true,
     this.showReleaseNotes = true,
     this.cupertinoButtonTextStyle,
